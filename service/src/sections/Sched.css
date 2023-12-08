@@ -1,0 +1,126 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #E0F4FF;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: #39A7FF;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.box-header {
+  position: absolute;
+  top: 10px; /* Position at the top */
+  left: 10px; /* Position at the left */
+  text-align: left;
+  margin: 10px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+p {
+  margin: 10px;
+}
+
+.box-logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px;
+}
+
+.active {
+  background-color: #87C4FF;
+}
+
+/* Increase the font size for MON to FRI labels */
+.box-header strong {
+  font-size: 35px;
+}
+
+/* Center the time text within the box */
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.clock {
+  text-align: center;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black; /* Add black border */
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.time-slot {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-bottom: 1px solid black; /* Add a black border to separate time slots */
+}
+
+.upper-left-button {
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Add some padding for better appearance */
+  border: none; /* Remove the link's default underline and border */
+  border-radius: 5px; /* Add a slight border radius */
+  text-decoration: none; /* Remove underline from the link */
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute; /* Position it absolutely */
+  top: 20px; /* Distance from the top of the viewport */
+  left: 20px; /* Distance from the left of the viewport */
+  transition: background-color 0.3s; /* Add a smooth color transition effect */
+}
+
+/* Style for the link on hover */
+.upper-left-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.confirmed {
+  background-color: #d32323(241, 11, 11); /* You can adjust the style as needed */
+  filter: blur(3px);     /* Apply blur effect */
+}
+
+.unavailable {
+  background-color: #7a6d6d; /* Set the background color to red */
+  color: #ffffff; /* Change the text color to white or a contrasting color */
+  cursor: not-allowed; /* Change the cursor to indicate it's not clickable */
+  /* Add any other styles you want for unavailable slots */
+}
