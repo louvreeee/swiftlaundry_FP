@@ -5,9 +5,9 @@ const Contact = () => {
   const bookingRef = useNav("Contact")
 
   return (
-    <section ref={bookingRef} id="contactSection">
+    <section ref={bookingRef} id="contactSection" classname="ContactContainer">
       <h2>Contact</h2>
-      <p>You’re single. I’m single. I feel like this is a problem we can solve together.</p>
+      <p>You’re luh. I’m single. I feel like this is a problem we can solve together.</p>
     </section>
   )
 }
